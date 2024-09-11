@@ -63,8 +63,8 @@ export default function Cards({ students }) {
               <img
                 src={
                   student.image
-                    ? "http://localhost:8080/images/" + student.image
-                    : "http://localhost:8080/images/defaultPic.png"
+                    ? "http://rfidattendance.koyeb.app/images/" + student.image
+                    : "http://rfidattendance.koyeb.app/images/defaultPic.png"
                 }
                 alt="profile pic"
               />

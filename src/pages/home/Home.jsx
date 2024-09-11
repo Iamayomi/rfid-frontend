@@ -27,7 +27,7 @@ export default function Home() {
   const getStudents = (e) => {
     axios
       .get(
-        "http://rfidattendance.koyeb.app/api/v1/rfid-attendance-project/students/get-Students"
+        "https://rfid-project-j60u.onrender.com/api/v1/rfid-attendance-project/students/get-Students"
       )
       .then((response) => {
         const { user } = response.data.data;
@@ -48,11 +48,11 @@ export default function Home() {
 
     let url;
     if (capitalizeName && rfid) {
-      url = `http://rfidattendance.koyeb.app/api/v1/rfid-attendance-project/students/home?name=${capitalizeName}&rfid_badge=${changeToupperCase}`;
+      url = `https://rfid-project-j60u.onrender.com/api/v1/rfid-attendance-project/students/home?name=${capitalizeName}&rfid_badge=${changeToupperCase}`;
     } else if (capitalizeName) {
-      url = `http://rfidattendance.koyeb.app/api/v1/rfid-attendance-project/students/home?name=${capitalizeName}`;
+      url = `https://rfidattendance.koyeb.app/api/v1/rfid-attendance-project/students/home?name=${capitalizeName}`;
     } else if (rfid) {
-      url = `http://rfidattendance.koyeb.app/api/v1/rfid-attendance-project/students/home?rfid_badge=${changeToupperCase}`;
+      url = `https://rfid-project-j60u.onrender.com/api/v1/rfid-attendance-project/students/home?rfid_badge=${changeToupperCase}`;
     }
     axios
       .get(url)

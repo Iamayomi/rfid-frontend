@@ -29,7 +29,7 @@ export default function Delete() {
   useEffect(() => {
     const getStudent = async () => {
       const res = await axios.get(
-        "http://rfidattendance.koyeb.app/api/v1/rfid-attendance-project/students/" +
+        "https://rfid-project-j60u.onrender.com/api/v1/rfid-attendance-project/students/" +
           id +
           "/getStudent"
       );
@@ -51,7 +51,7 @@ export default function Delete() {
     e.preventDefault();
     try {
       await axios.delete(
-        "http://rfidattendance.koyeb.app/api/v1/rfid-attendance-project/students/" +
+        "https://rfid-project-j60u.onrender.com/api/v1/rfid-attendance-project/students/" +
           id +
           "/delete-student"
       );
@@ -86,8 +86,8 @@ export default function Delete() {
               <img
                 src={
                   student.image
-                    ? "http://rfidattendance.koyeb.app/images/" + student.image
-                    : "http://rfidattendance.koyeb.app/images/defaultPic.png"
+                    ? "https://rfid-project-j60u.onrender.com/images/" + student.image
+                    : "https://rfid-project-j60u.onrender.com/images/defaultPic.png"
                 }
                 alt="Profile Pic"
               />
